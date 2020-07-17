@@ -1,0 +1,111 @@
+# deployment
+host:               192.168.128.200
+port:               4000
+
+title:              togangel Blog´s
+description:        Anotaciones, manuales, consejos, trucos, recordatorios y tips que he desarollado en la informática.
+
+# put your disqus here
+disqus_shortname:
+reading_time:       true # if true, shows the estimated reading time for a post
+words_per_minute:   100
+logo:               favicon.png # logo visible in the topbar
+excerpt_separator:  <!--more-->
+# Your site's domain goes here (eg: http://togangel.github.io, etc)
+# When testing locally leave blank or use http://localhost:4000
+
+url:                ""
+baseurl:            "/blog"
+
+# draw your top menu here
+# each item must have a title and a url.
+#   To list post categories. use type: 'categories'
+#   To create sub categories. add a submenu item
+# See the example
+
+menu:
+  - title:          'Etiquetas'
+    url:            '/tags'
+  - title:          'Categorías'
+    url:            '/categories'
+    type:           'categories'
+  - title:          'Favoritos'
+    url:            '/#'
+    submenu:
+      - title:      'Quién soy?'
+        url:        '/about'
+      - title:      'Blog posts'
+        url:        '/posts'
+
+# Owner/author information
+owner:
+  name:             Miguel Angel Gómez Godínez
+  avatar:           images/togangel.jpg
+  bio:              "Técnico en reparación de ordenadores y tecnología informática, resuelto y habilidoso para la resolución de problemas en equipos de sistemas Windows así como en sistemas Linux, así mismo para ofrecer consejos técnicos adecuados para prevenir futuros problemas y prolongar la vida de los equipos informáticos."
+
+  user:             togangel
+  site:             https://togangel.github.io
+  email:            togangel&#64;gmail.com
+  twitter:          togangel
+  github:           togangel
+
+social:
+  - title:          "mobile"
+    url:            "tel://5616295352"
+  - title:          "whatsapp"
+    url:            "https://wa.me/5215511715490?text=Hola%20Miguel,%20Buen%20d&iacute;a%20"
+  - title:          "location-arrow"
+    url:            "https://t.me/togangel"
+  - title:          "comment"
+    url:            "https://m.me/100000558516720"
+  - title:          "facebook"
+    url:            "https://fb.com/togangel"
+  - title:          "twitter"
+    url:            "https://twitter.com/togangel"
+  - title:          "linkedin"
+    url:            "https://in.linkedin.com/in/togangel"
+  - title:          "envelope"
+    url:            "mailto://togangel&#64;gmail.com?&subject=Gusto%20en%20saludarte&body=Hola%20Miguel,%20buen%20d&iacute;a%20"
+
+# Background image to be tiled on all pages
+background:         background.png
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:   UA-172935154-1
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+#timezone:          America/Mexico_City
+locale:             es-MX
+future:             true
+highlighter:        rouge
+markdown:           kramdown
+sass:
+  sass_dir:         _sass
+  style:            compressed
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:          /:categories/:title/
+
+# Amount of post to show on home page
+paginate:           5
+
+# if true, shows the floatting share buttons
+float_share:        true
+
+# Octopress
+# Default extensions
+post_ext:           md
+page_ext:           md
+# Found in _templates/
+post_layout:        post
+page_layout:        page
+# Format titles with titlecase?
+titlecase:          true
+
+include:            [".htaccess"]
+exclude:            ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+plugins:            [jekyll-paginate]
+theme:              neo-hpstr-jekyll-theme
