@@ -1,6 +1,6 @@
 # deployment
-# host:               192.168.128.200
-# port:               4000
+host:               192.168.128.200
+port:               4000
 
 title:              togangel Blog´s
 description:        Anotaciones, manuales, consejos, trucos, recordatorios y tips que he desarollado en la informática.
@@ -11,10 +11,10 @@ reading_time:       true # if true, shows the estimated reading time for a post
 words_per_minute:   100
 logo:               favicon.png # logo visible in the topbar
 excerpt_separator:  <!--more-->
-# Your site's domain goes here (eg: https://togangel.github.io, etc)
+# Your site's domain goes here (eg: http://togangel.github.io, etc)
 # When testing locally leave blank or use http://localhost:4000
 
-url:                "https://togangel.github.io"
+url:                ""
 baseurl:            "/blog"
 
 # draw your top menu here
@@ -47,7 +47,8 @@ owner:
   site:             https://togangel.github.io
   email:            togangel&#64;gmail.com
   twitter:          togangel
-  github:           togangel
+  facebook:         togangel
+  youtube:          togangelito
 
 social:
   - title:          "mobile"
@@ -108,4 +109,3 @@ titlecase:          true
 include:            [".htaccess"]
 exclude:            ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
 plugins:            [jekyll-paginate]
-#theme:              neo-hpstr-jekyll-theme
