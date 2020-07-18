@@ -13,16 +13,17 @@
         {% for network in site.social %}
           <li><a href="{{ network.url }}" target="_blank"><i class="fa fa-{{ network.title }} fa-fw"></i></a></li>
         {% endfor %}
-      </ul>
-      <!--
-      {% if site.owner.github %}
-        <a aria-label="Sígueme @{{site.owner.github}} on GitHub" data-style="mega" href="https://github.com/{{site.owner.github}}" class="github-button">Sígueme @{{site.owner.github}}</a>
-      {% endif %}
-      <br>
-      {% if site.owner.twitter %}
-        <a href="https://twitter.com/{{site.owner.twitter}}" class="twitter-follow-button" data-show-count="false" data-size="large">Sígueme @{{site.owner.twitter}}</a>
-      {% endif %}
-      -->
-    </div>
+        </ul>
+<!--
+        {% if site.owner.twitter %}
+        <a href="https://twitter.com/{{site.owner.twitter}}?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-lang="es" data-show-count="false">Follow @{{site.owner.twitter}}</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        {% endif %}
+        <br>
+        {% if site.owner.facebook %}
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v7.0" nonce="X6rBZ2o8"></script>
+        <a class="fb-like" data-href="https://fb.com/{{site.owner.facebook}}/" data-width="" data-layout="button" data-action="like" data-size="large" data-share="true"></a>
+        {% endif %}
+-->
+      </div>
   </div>
 </div>
